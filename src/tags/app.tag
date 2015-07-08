@@ -1,0 +1,3 @@
+<app>
+  <content></content>
+</app>
