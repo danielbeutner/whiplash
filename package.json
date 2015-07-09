@@ -1,8 +1,8 @@
 {
   "name": "whiplash",
   "version": "1.0.0",
-  "description": "",
-  "main": "",
+  "description": "The power of riot and browserify within a gulp starter-kit.",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "devDependencies": {
     "browser-sync": "^2.7.7",
     "browserify": "^10.2.4",
+    "glob": "^5.0.13",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-jshint": "^1.11.2",

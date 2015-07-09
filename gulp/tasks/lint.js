@@ -5,7 +5,7 @@ var gulp = require('gulp'),
     config = require('../config');
 
 gulp.task('lint', function() {
-  return gulp.src([config.src + '/js/**/*.js'])
+  return gulp.src(['./gulpfiles.js', config.src + '/js/**/*.js'])
     .pipe(lint())
     .pipe(lint.reporter(stylish));
 });

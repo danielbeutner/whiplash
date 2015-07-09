@@ -1,15 +1,17 @@
 var gulp = require('gulp'),
+    glob = require('glob'),
     sync = require('browser-sync'),
     browserify = require('browserify'),
     riotify = require('riotify'),
     source = require('vinyl-source-stream'),
     errors = require('../util/errors'),
-    config = require('../config').browserify;
-
+    config = require('../config').browserify,
+    tags = [];
 gulp.task('browserify', function() {
+  tags = glob.sync(config.tags);
   return browserify({
     debug: false,
-    entries: [config.src + '/js/app.js'],
+    entries: [tags, config.src],
     transform: [riotify]
   })
   .bundle()

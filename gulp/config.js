@@ -11,11 +11,16 @@ module.exports = {
     dest: dest
   },
   browserify: {
-    src: src,
-    dest: dest
+    src: src + '/js/app.js',
+    dest: dest,
+    tags: src + '/tags/**/*.tag'
   },
   html: {
     src: src + "/html/*.html",
+    dest: dest + "/"
+  },
+  assets: {
+    src: src + "/assets/**/*",
     dest: dest + "/"
   }
 };
