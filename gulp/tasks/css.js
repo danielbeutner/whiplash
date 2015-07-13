@@ -14,8 +14,8 @@ gulp.task('css', function() {
   var processors = [
         autoprefixer({browsers: ['last 2 version']}),
         mqpacker,
-        csswring,
-        cssnext
+        // csswring,
+        cssnext()
       ];
   gulp.src(config.src)
     .pipe(sass())

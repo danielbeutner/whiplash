@@ -6,13 +6,12 @@ $default-font-family:           "Helvetica Neue", Helvetica, Arial, sans-serif;
 $paragraph-spacing:             $default-line-height;
 
 // Headings
-$heading-font-size:             $default-font-size + $default-line-height;
 $heading-font-weight:           $default-font-weight;
 $heading-line-height:           $default-line-height;
 $heading-font-family:           $default-font-family;
+$heading-font-size:             $default-font-size * 1.618;
 $heading-2-font-size:           $heading-font-size * 0.875;
 $heading-3-font-size:           $heading-font-size * 0.825;
 $heading-4-font-size:           $heading-font-size * 0.775;
 $heading-5-font-size:           $heading-font-size * 0.725;
 $heading-6-font-size:           $heading-font-size * 0.675;
-

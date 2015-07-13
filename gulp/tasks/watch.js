@@ -7,8 +7,12 @@ gulp.task('watch', function() {
     server: config.dest,
     index: 'app.html'
   });
-  gulp.watch(config.src + '/html/*.html', ['html']);
-  gulp.watch([config.src + '/js/**/*.js', config.src + '/tags/**/*.tag'], ['lint','browserify']);
-  gulp.watch(config.src + '/sass/**/*.{sass,scss}', ['sass']);
-  gulp.watch('./gulpfile.js', ['lint']);
+  gulp.watch(config.src + '/html/*.html',
+             ['html']);
+  gulp.watch([config.src + '/js/**/*.js', config.src + '/tags/**/*.tag'],
+             ['lint','js']);
+  gulp.watch(config.src + '/sass/**/*.{sass,scss}',
+             ['css']);
+  gulp.watch('./gulpfile.js',
+             ['lint']);
 });
