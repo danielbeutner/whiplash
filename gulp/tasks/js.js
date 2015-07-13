@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     errors = require('../util/errors'),
     config = require('../config').browserify,
     tags = [];
-gulp.task('browserify', function() {
+gulp.task('js', function() {
   tags = glob.sync(config.tags);
   return browserify({
     debug: false,

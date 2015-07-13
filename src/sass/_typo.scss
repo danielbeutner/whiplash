@@ -1,0 +1,37 @@
+body {
+  font-size:   $default-font-size;
+  line-height: $default-line-height;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $heading-font-family;
+  font-size:   $heading-font-size;
+  font-weight: $heading-font-weight;
+  margin: 0 0 $paragraph-spacing;
+}
+h1 {
+  font-size:   $heading-font-size;
+}
+h2 {
+  font-size:   $heading-2-font-size;
+}
+h3 {
+  font-size:   $heading-3-font-size;
+}
+h4 {
+  font-size:   $heading-4-font-size;
+}
+h5 {
+  font-size:   $heading-5-font-size;
+}
+h6 {
+  font-size:   $heading-6-font-size;
+}
+ul, ol, p, blockquote{
+  font-family: $default-font-family;
+  font-weight: $default-font-weight;
+  margin: 0 0 $paragraph-spacing;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}

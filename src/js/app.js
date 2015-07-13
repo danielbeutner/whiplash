@@ -1,8 +1,12 @@
-var riot = window.riot = require('riot');
+window.R = window.riot = require('riot');
 window.$ = window.jQuery = require('jquery');
 
+var guides = require('./debug/guides');
+
 // Mount all tags
-riot.mount('*');
+R.mount('*');
 
 // Initial state
 $('html').removeClass('no-js');
+
+$("body").baselineOverlay();
