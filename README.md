@@ -1,4 +1,4 @@
-# whiplash
+# whiplash [![Build Status](https://travis-ci.org/danielditgens/whiplash.svg)](https://travis-ci.org/danielditgens/whiplash)
 
 The power of riot and browserify within a gulp starter-kit.
 
