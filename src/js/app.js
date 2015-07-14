@@ -1,5 +1,5 @@
-window.R = window.riot = require('riot');
-window.$ = window.jQuery = require('jquery');
+var R = window.R = window.riot = require('riot');
+var $ = window.$ = window.jQuery = require('jquery');
 
 var guides = require('./debug/guides');
 
@@ -9,4 +9,4 @@ R.mount('*');
 // Initial state
 $('html').removeClass('no-js');
 
-$("body").baselineOverlay();
+$("app").baselineOverlay();

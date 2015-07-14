@@ -2,22 +2,16 @@
  * Typography
  */
 
-@custom-selector :--heading h1,h2,h3,h4,h5,h6;
-
 body {
   font-size:   $default-font-size;
   line-height: $default-line-height;
 }
 
-:--heading {
+:--h { // h1 - h6
   font-family: $heading-font-family;
   font-size:   $heading-font-size;
   font-weight: $heading-font-weight;
   margin: 0 0 $paragraph-spacing;
-}
-
-h1 {
-  font-size:   $heading-font-size;
 }
 
 h2 {
@@ -40,7 +34,7 @@ h6 {
   font-size:   $heading-6-font-size;
 }
 
-ul, ol, p, blockquote{
+:--t { // ul,ol,p,blockquote
   font-family: $default-font-family;
   font-weight: $default-font-weight;
   margin: 0 0 $paragraph-spacing;

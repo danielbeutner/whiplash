@@ -6,11 +6,11 @@ module.exports = {
     src: src,
     dest: dest
   },
-  sass: {
-    src: src + "/sass/**/*.{sass,scss}",
+  css: {
+    src: src + "/css/**/*.{sass,scss}",
     dest: dest
   },
-  browserify: {
+  js: {
     src: src + '/js/app.js',
     dest: dest,
     tags: src + '/tags/**/*.tag'
@@ -18,6 +18,10 @@ module.exports = {
   html: {
     src: src + "/html/*.html",
     dest: dest + "/"
+  },
+  tags: {
+    src: src + "/tags/**/*.{sass,scss}",
+    dest: src + "/css"
   },
   assets: {
     src: src + "/assets/**/*",

@@ -5,8 +5,9 @@ var gulp = require('gulp'),
     riotify = require('riotify'),
     source = require('vinyl-source-stream'),
     errors = require('../util/errors'),
-    config = require('../config').browserify,
+    config = require('../config').js,
     tags = [];
+
 gulp.task('js', function() {
   tags = glob.sync(config.tags);
   return browserify({

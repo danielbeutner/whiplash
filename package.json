@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": "git@github.com:danielditgens/whiplash.git",
   "author": "Daniel Ditgens",
   "license": "MIT",
   "devDependencies": {
@@ -13,11 +14,12 @@
     "browser-sync": "^2.7.7",
     "browserify": "^10.2.4",
     "css-mqpacker": "^3.1.0",
+    "cssnext": "^1.8.0",
     "csswring": "^3.0.5",
+    "del": "^1.2.0",
     "glob": "^5.0.13",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
-    "gulp-cssnext": "^1.0.1",
     "gulp-jshint": "^1.11.2",
     "gulp-notify": "^2.2.0",
     "gulp-postcss": "^5.1.9",

@@ -1,15 +1,13 @@
-/*globals document, window, jQuery */
-
 (function ($) {
 
-  "use strict";
+  'use strict';
 
-  var canvas;
-  var settings;
-  var size;
+  var canvas,
+      settings,
+      size;
 
   // http://stackoverflow.com/questions/610406/
-  if (!String.prototype.format) {
+  if(!String.prototype.format) {
     String.prototype.format = function () {
       var args = arguments;
       return this.replace(/\{(\d+)\}/g, function (match, number) {
@@ -19,17 +17,15 @@
   }
 
   var initCanvas = function () {
-    var attrs = 'width="{0}" height="{1}"'.format(size.width, size.height);
-    var element = $('<canvas {0}></canvas>'.format(attrs))
+    var attrs = 'width="{0}" height="{1}"'.format(size.width, size.height),
+        element = $('<canvas {0}></canvas>'.format(attrs))
       .css({position: "absolute", top: "0", left: "-9999px"});
     canvas = element[0];
     $("body").append(canvas);
   };
 
   var initTarget = function (target) {
-    var button;
-    var css;
-    var overlay;
+    var button, css, overlay;
 
     var generateOverlayStyles = function () {
       var offset = $(target).offset();

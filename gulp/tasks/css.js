@@ -8,21 +8,21 @@ var gulp = require('gulp'),
     cssnext = require('cssnext'),
     sync = require('browser-sync'),
     errors = require('../util/errors'),
-    config = require('../config').sass;
+    config = require('../config').css;
 
-gulp.task('css', function() {
+gulp.task('css', ['tags'], function() {
   var processors = [
         autoprefixer({browsers: ['last 2 version']}),
         mqpacker,
-        // csswring,
         cssnext()
       ];
+
   gulp.src(config.src)
-    .pipe(sass())
     .pipe(sourcemaps.init())
-    .pipe(postcss(processors))
+        .pipe(sass())
+        .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
     .on('error', errors)
     .pipe(gulp.dest('app'))
-    .pipe(sync.stream());
+    .pipe(sync.stream({match: '**/*.css'}));
 });

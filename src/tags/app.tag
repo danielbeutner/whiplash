@@ -1,8 +1,4 @@
 <app>
-  <atoms></atoms>
-  <molecules></molecules>
-  <organisms></organisms>
-  <templates></templates>
-  <pages></pages>
+  <navigation></navigation>
   <kitchensink></kitchensink>
 </app>
