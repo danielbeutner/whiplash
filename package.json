@@ -4,7 +4,7 @@
   "description": "The power of riot and browserify within a gulp starter-kit.",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp build"
   },
   "repository": "git@github.com:danielditgens/whiplash.git",
   "author": "Daniel Ditgens",
