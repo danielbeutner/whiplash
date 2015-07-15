@@ -29,8 +29,7 @@ module.exports = {
   },
   icons: {
     src: src + "/icons/icons-14px.sketch",
-    classname: "icon",
-    fontname: "iconset",
+    name: "icon",
     template: {
       name: "whiplash-style",
       src: src + "/icons/templates/"

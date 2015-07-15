@@ -2,25 +2,27 @@ app {
   display: block;
 }
 @font-face {
-  font-family: "iconset";
-  src: url('assets/fonts/iconset.eot');
-  src: url('assets/fonts/iconset.eot?#iefix') format('eot'),
-    url('assets/fonts/iconset.woff2') format('woff2'),
-    url('assets/fonts/iconset.woff') format('woff'),
-    url('assets/fonts/iconset.ttf') format('truetype'),
-    url('assets/fonts/iconset.svg#iconset') format('svg');
+  font-family: "icon";
+  src: url('assets/fonts/icon.eot');
+  src: url('assets/fonts/icon.eot?#iefix') format('eot'),
+    url('assets/fonts/icon.woff2') format('woff2'),
+    url('assets/fonts/icon.woff') format('woff'),
+    url('assets/fonts/icon.ttf') format('truetype'),
+    url('assets/fonts/icon.svg#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.icon::before {
-  display: inline-block;
-  font-family: "iconset";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon {
+  &::before {
+    display: inline-block;
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   &-lg {
     font-size: 1.3333333333333333rem;
     line-height: 0.75rem;

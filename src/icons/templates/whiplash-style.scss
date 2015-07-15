@@ -10,14 +10,16 @@
   font-style: normal;
 }
 
-.<%= className %>::before {
-  display: inline-block;
-  font-family: "<%= fontName %>";
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.<%= className %> {
+  &::before {
+    display: inline-block;
+    font-family: "<%= fontName %>";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   &-lg {
     font-size: 1.3333333333333333rem;
     line-height: 0.75rem;

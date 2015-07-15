@@ -11,24 +11,19 @@ gulp.task('icons', function(){
       export: 'artboards',
       formats: 'svg'
     }))
-    .pipe(iconfont({ fontName: config.fontname, svg: true }))
+    .pipe(iconfont({ fontName: config.name, svg: true }))
     .on('glyphs', function(glyphs) {
       var options = {
         glyphs: glyphs.map(function(glyph) {
           return { name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0) };
         }),
-        fontName: config.fontname,
+        fontName: config.name,
         fontPath: config.dest.fontcss + '/',
-        className: config.classname
+        className: config.name
       };
       gulp.src(config.template.src + config.template.name + '.scss')
         .pipe(consolidate('lodash', options))
-        .pipe(rename({ basename: config.fontname }))
-        .pipe(gulp.dest(config.dest.tag));
-
-      gulp.src(config.template.src + config.template.name + '.tag')
-        .pipe(consolidate('lodash', options))
-        .pipe(rename({ basename: config.fontname }))
+        .pipe(rename({ basename: config.name }))
         .pipe(gulp.dest(config.dest.tag));
     })
     .pipe(gulp.dest(config.dest.font));

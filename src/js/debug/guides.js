@@ -64,7 +64,7 @@
         "padding": "0.5em",
         "position": "fixed",
         "bottom": "10px",
-        "left": "10px",
+        "right": "10px",
         "z-index": settings.zIndex
       })
       .click(function () {
