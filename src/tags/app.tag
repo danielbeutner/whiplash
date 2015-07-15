@@ -1,5 +1,5 @@
 <app>
-  <navigation></navigation>
-  <kitchensink></kitchensink>
-  <iconset></iconset>
+  <navigation />
+  <kitchensink />
+  <iconset />
 </app>
