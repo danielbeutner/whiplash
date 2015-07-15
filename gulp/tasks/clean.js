@@ -16,3 +16,7 @@ gulp.task('clean:html', function(cb) {
 gulp.task('clean:js', function(cb) {
     del(['app/*.js'], cb)
 });
+
+gulp.task('clean:assets', function(cb) {
+    del(['app/assets'], cb)
+});

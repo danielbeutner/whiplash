@@ -9,28 +9,65 @@ No bullshit bingo...
 - Browserify support
 - Browser-Sync support
 - Organized gulp tasks
-- Plain HTML and JavaScript 
+- Plain HTML and JavaScript
 
-## Dependencies
+## Getting started
+
+### Dependencies
 
 You need gulp installed globally, so if you don't have it, install it:
 
 ```npm install --global gulp```
 
-## Installation
+### Installation
 
 Easy installation with:
 
 ```npm install```
 
-## Build
+### Build
 
 Build everything you need:
 
 ```gulp build```
 
-## Development
+### Development
 
 Start hacking:
 
 ```gulp``` or ```gulp watch```
+
+## Usage
+
+In `src` there are all files you need:
+
+```
+src
+|-assets/        // All assets
+|-css/           // SCSS files for styling
+|-html/          // Your initial html file
+|-js/            // JavaScript stuff
+|-tags/          // Tags with .tag and .scss files
+  |-atoms/       // atoms - the smallest component
+  |-molecules/   // molecules - component with more than one atom
+  |-organism/    // molecules - component with more than one molecule
+  |-pages/       // pages - complete pages with content and functionality
+  |-templates/   // templates - abstract of a page, only structure
+  |-app.scss    // Global style for <app> tag
+  |-app.tag     // The initial tag for you app
+```
+
+Now you can add atoms, molecules, organisms, pages and templates to your app. It will automatically merge into the app directory.
+
+This could be look like this:
+
+```
+app
+|-assets/
+|-app.css
+|-app.css.map
+|-app.html
+|-app.js
+```
+
+That's it.

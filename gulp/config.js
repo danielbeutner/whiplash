@@ -25,6 +25,6 @@ module.exports = {
   },
   assets: {
     src: src + "/assets/**/*",
-    dest: dest + "/"
+    dest: dest + "/assets"
   }
 };
