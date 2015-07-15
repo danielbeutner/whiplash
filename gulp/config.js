@@ -26,5 +26,19 @@ module.exports = {
   assets: {
     src: src + "/assets/**/*",
     dest: dest + "/assets"
+  },
+  icons: {
+    src: src + "/icons/icons-14px.sketch",
+    classname: "icon",
+    fontname: "iconset",
+    template: {
+      name: "whiplash-style",
+      src: src + "/icons/templates/"
+    },
+    dest: {
+      font: src + "/assets/fonts",
+      fontcss: "assets/fonts",
+      tag: src + "/tags/atoms"
+    }
   }
 };

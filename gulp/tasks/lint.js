@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     errors = require('../util/errors'),
     config = require('../config');
 
-gulp.task('lint', function() {
+gulp.task('lint', ['js'], function() {
   return gulp.src(['./gulpfiles.js', config.src + '/js/**/*.js'])
     .pipe(lint())
     .pipe(lint.reporter(stylish));
