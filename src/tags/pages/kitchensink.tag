@@ -55,4 +55,11 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
   </blockquote>
+  <h1>Icons</h1>
+  <icon name="chevron-up" size="2x" />
+  <icon name="chevron-down" size="2x" />
+  <icon name="chevron-left" size="2x" />
+  <icon name="chevron-right" size="2x" />
+  <icon name="hamburger" size="2x" />
+  <icon name="search" size="2x" />
 </kitchensink>
