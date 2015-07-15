@@ -1,0 +1,30 @@
+.icon {
+  font-size: $default-font-size;
+  line-height: $default-line-height;
+  vertical-align: middle;
+  &::before {
+    display: inline-block;
+    font-family: "icon";
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &-2x {
+    font-size: $default-font-size * 2;
+  }
+  &-3x {
+    font-size: $default-font-size * 3;
+  }
+  &-4x {
+    font-size: $default-font-size * 4;
+  }
+  &-5x {
+    font-size: $default-font-size * 5;
+  }
+  &-fw {
+    text-align: center;
+    width: $default-line-height;
+  }
+}
