@@ -7,6 +7,8 @@ var guides = require('./debug/guides');
 R.mount('*');
 
 // Initial state
-$('html').removeClass('no-js');
-
-$("app").baselineOverlay();
+$(window).load(function () {
+    $('app').removeClass('loading');
+    $("app").baselineOverlay();
+    $('html').removeClass('no-js');
+});
