@@ -71,4 +71,9 @@
     <icon name="hamburger" size="2x" />
     <icon name="search" size="2x" />
   </p>
+  <p>
+    <btn status="primary">Test button</btn>
+    <btn status="primary"><icon name="search" size="lg" /> Search</btn>
+  </p>
+  <p><icon name="search" size="lg" /> Search</p>
 </kitchensink>

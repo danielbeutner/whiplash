@@ -1,0 +1,10 @@
+btn {
+  > button {
+    border: 1px solid #666;
+    background-color: transparent;
+    padding: $default-line-height / 2 $default-line-height;
+    &:hover {
+      background-color: transparentize($black, 0.95);
+    }
+  }
+}

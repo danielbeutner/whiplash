@@ -1,6 +1,16 @@
 app {
   display: block;
 }
+btn {
+  > button {
+    border: 1px solid #666;
+    background-color: transparent;
+    padding: $default-line-height / 2 $default-line-height;
+    &:hover {
+      background-color: transparentize($black, 0.95);
+    }
+  }
+}
 @font-face {
   font-family: "icon";
   src: url('assets/fonts/icon.eot');
@@ -14,9 +24,9 @@ app {
 }
 
 .icon-chevron-down::before { content: "\EA01" }
-.icon-chevron-left::before { content: "\EA02" }
-.icon-chevron-right::before { content: "\EA03" }
-.icon-chevron-up::before { content: "\EA04" }
+.icon-chevron-up::before { content: "\EA02" }
+.icon-chevron-left::before { content: "\EA03" }
+.icon-chevron-right::before { content: "\EA04" }
 .icon-hamburger::before { content: "\EA05" }
 .icon-search::before { content: "\EA06" }
 .icon-whiplash::before { content: "\EA07" }
