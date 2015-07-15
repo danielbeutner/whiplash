@@ -10,6 +10,7 @@ No bullshit bingo...
 - Browser-Sync support
 - Organized gulp tasks
 - Plain HTML and JavaScript
+- Icon generator (Many thanks to [cognitom](https://github.com/cognitom/symbols-for-sketch), [gulp-sketch](https://github.com/cognitom/gulp-sketch) and [gulp-iconfont](https://github.com/nfroidure/gulp-iconfont))
 
 ## Getting started
 
