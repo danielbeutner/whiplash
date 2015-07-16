@@ -1,10 +1,12 @@
 // Initial stuff
-@import '_loader';
 @import '_reset';
+@import '_loader';
 @import '_var';
 @import '_scaffold';
-@import '_custom-selectors';
 @import '_mixins';
+
+// Grid
+@import '_grid.scss';
 
 // Scaffold
 @import '_typo';

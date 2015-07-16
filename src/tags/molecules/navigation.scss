@@ -1,11 +1,11 @@
 navigation {
   nav {
-    display: inline-block;
+    display: block;
     ul {
       li {
         display: inline-block;
-        line-height: $default-line-height;
-        padding: $default-line-height / 2;
+        line-height: $base-line-height;
+        padding: $base-line-height;
         :any-link {
           color: blue;
         }

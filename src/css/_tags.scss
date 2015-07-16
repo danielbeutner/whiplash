@@ -1,11 +1,29 @@
 app {
   display: block;
+  position: relative;
+  overflow: hidden;
 }
+navigation {
+  nav {
+    display: block;
+    ul {
+      li {
+        display: inline-block;
+        line-height: $base-line-height;
+        padding: $base-line-height;
+        :any-link {
+          color: blue;
+        }
+      }
+    }
+  }
+}
+
 btn {
   > button {
     border: 1px solid #666;
     background-color: transparent;
-    padding: $default-line-height / 2 $default-line-height;
+    padding: $base-line-height / 2 $base-line-height;
     &:hover {
       background-color: transparentize($black, 0.95);
     }
@@ -24,29 +42,9 @@ btn {
 }
 
 .icon-chevron-down::before { content: "\EA01" }
-.icon-chevron-up::before { content: "\EA02" }
-.icon-chevron-left::before { content: "\EA03" }
-.icon-chevron-right::before { content: "\EA04" }
+.icon-chevron-left::before { content: "\EA02" }
+.icon-chevron-right::before { content: "\EA03" }
+.icon-chevron-up::before { content: "\EA04" }
 .icon-hamburger::before { content: "\EA05" }
 .icon-search::before { content: "\EA06" }
 .icon-whiplash::before { content: "\EA07" }
-navigation {
-  nav {
-    display: inline-block;
-    ul {
-      li {
-        display: inline-block;
-        line-height: $default-line-height;
-        padding: $default-line-height / 2;
-        :any-link {
-          color: blue;
-        }
-      }
-    }
-  }
-}
-
-kitchensink {
-  display: block;
-  margin: $default-line-height;
-}

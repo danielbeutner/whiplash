@@ -1,0 +1,9 @@
+// baseline mixin
+// needs global $base-line-height
+// and $lines
+
+@mixin baseline($lines) {
+  line-height: $base-line-height * $lines;
+  margin-top: 2 * $base-line-height;
+  margin-bottom: $base-line-height;
+}

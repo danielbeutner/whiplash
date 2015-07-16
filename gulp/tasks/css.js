@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer-core'),
     mqpacker = require('css-mqpacker'),
+    lost = require('lost'),
     csswring = require('csswring'),
     cssnext = require('cssnext'),
     sync = require('browser-sync'),
@@ -14,15 +15,15 @@ gulp.task('css', ['tags'], function() {
   var processors = [
         autoprefixer({browsers: ['last 2 version']}),
         mqpacker,
+        lost,
         cssnext()
       ];
 
   gulp.src(config.src)
     .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass()).on('error', errors)
         .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .on('error', errors)
     .pipe(gulp.dest('app'))
     .pipe(sync.stream({match: '**/*.css'}));
 });

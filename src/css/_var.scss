@@ -1,20 +1,13 @@
 // Colors
-$black:                         #000;
+$black: #000;
 
-// Global typo & paragraphs
-$default-font-size:             0.875rem;
-$default-font-weight:           300;
-$default-line-height:           1.25rem;
-$default-font-family:           "Helvetica Neue", Helvetica, Arial, sans-serif;
-$paragraph-spacing:             $default-line-height;
+// // Global typo & paragraphs
+$font-weight: 300;
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// Headings
-$heading-font-weight:           $default-font-weight;
-$heading-line-height:           $default-line-height;
-$heading-font-family:           $default-font-family;
-$heading-font-size:             $default-font-size * 1.618;
-$heading-2-font-size:           $heading-font-size * 0.875;
-$heading-3-font-size:           $heading-font-size * 0.825;
-$heading-4-font-size:           $heading-font-size * 0.775;
-$heading-5-font-size:           $heading-font-size * 0.725;
-$heading-6-font-size:           $heading-font-size * 0.675;
+$base-font-size: 0.875rem;
+$base-line-height: 1.375rem;
+$h1-font-size: 3.6875rem;
+$h2-font-size: 2.3125rem;
+$h3-font-size: 1.4375rem;
+$h4-font-size: 0.875rem;

@@ -1,46 +1,35 @@
 /*
  * Typography
  */
-
-body {
-  font-size: $default-font-size;
-  line-height: $default-line-height;
+h1 {
+  font-size: $h1-font-size;
+  @include baseline(3);
 }
-
-:--header { /* h1 - h6 */
-  font-family: $heading-font-family;
-  font-size: $heading-font-size;
-  font-weight: $heading-font-weight;
-  margin: 0 0 $paragraph-spacing;
-}
-
 h2 {
-  font-size: $heading-2-font-size;
+  font-size: $h2-font-size;
+  @include baseline(2);
 }
 
 h3 {
-  font-size: $heading-3-font-size;
+  font-size: $h3-font-size;
+  @include baseline(1);
 }
 
 h4 {
-  font-size: $heading-4-font-size;
+  font-size: $h4-font-size;
+  @include baseline(1);
 }
 
-h5 {
-  font-size: $heading-5-font-size;
+h5,h6 {
+  display: none;
 }
 
-h6 {
-  font-size: $heading-6-font-size;
+ul, ol, p, blockquote, address {
+  line-height: $base-line-height;
+  margin: $base-line-height 0;
 }
 
-:--text { /* ul, ol, p, blockquote */
-  font-family: $default-font-family;
-  font-weight: $default-font-weight;
-  margin: 0 0 $paragraph-spacing;
-}
-
-:--list { /* ul, ol */
-  margin: 0 0 0 $default-line-height;
+ul, ol {
+  margin: 0 0 0 $base-line-height;
   padding: 0;
 }

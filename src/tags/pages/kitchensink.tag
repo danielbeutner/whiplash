@@ -1,10 +1,10 @@
 <kitchensink>
-  <h1>Headline 1</h1>
+  <h1>Headline 1 grre</h1>
   <h2>Headline 2</h2>
   <h3>Headline 3</h3>
   <h4>Headline 4</h4>
   <h5>Headline 5</h5>
-  <h6>Headline 6</h6>
+  <h6>Headline 6 greej</h6>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, quia unde cumque hic ipsa, ratione sint quasi consequuntur consectetur. Vero molestiae repellendus asperiores nulla, quasi. Nobis quae optio voluptates laudantium.</p>
   <ul>
     <li>Unordered list item 1</li>
@@ -55,25 +55,4 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
     <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
   </blockquote>
-  <h1>Icons</h1>
-  <p>
-    <icon name="chevron-up" />
-    <icon name="chevron-up" size="2x" />
-    <icon name="chevron-up" size="3x" />
-    <icon name="chevron-up" size="4x" />
-    <icon name="chevron-up" size="5x" />
-  </p>
-  <p>
-    <icon name="chevron-up" size="2x" />
-    <icon name="chevron-down" size="2x" />
-    <icon name="chevron-left" size="2x" />
-    <icon name="chevron-right" size="2x" />
-    <icon name="hamburger" size="2x" />
-    <icon name="search" size="2x" />
-  </p>
-  <p>
-    <btn status="primary">Test button</btn>
-    <btn status="primary"><icon name="search" size="lg" /> Search</btn>
-  </p>
-  <p><icon name="search" size="lg" /> Search</p>
 </kitchensink>

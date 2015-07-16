@@ -1,30 +1,26 @@
 .icon {
-  font-size: $default-font-size;
-  line-height: $default-font-size / 2;
+  font-size: $base-font-size;
+  line-height: inherit;
   vertical-align: middle;
   &::before {
     display: inline-block;
     font-family: "icon";
     font-style: normal;
     font-weight: normal;
-    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  &-lg {
-    font-size: $default-font-size * 1.25;
+  &-s {
+    font-size: 0.875rem;
   }
-  &-2x {
-    font-size: $default-font-size * 2;
+  &-m {
+    font-size: 1.4375rem;
   }
-  &-3x {
-    font-size: $default-font-size * 3;
+  &-l {
+    font-size: 2.3125rem;
   }
-  &-4x {
-    font-size: $default-font-size * 4;
-  }
-  &-5x {
-    font-size: $default-font-size * 5;
+  &-xl {
+    font-size: 3.6875rem;
   }
   &-fw {
     text-align: center;
