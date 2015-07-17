@@ -2,4 +2,8 @@ app {
   display: block;
   position: relative;
   overflow: hidden;
+  route {
+    display: block;
+    padding: $base-line-height $base-line-height;
+  }
 }

@@ -6,11 +6,12 @@
   </nav>
   <script>
     this.items = [
-      { title: 'Get Started ', href: 'getstarted'},
-      { title: 'Atoms', href: 'atoms'},
-      { title: 'Molecules', href: 'molecules'},
-      { title: 'Organisms', href: 'organisms'},
-      { title: 'Layouts', href: 'layouts'}
+      { title: 'Home', href: '' },
+      { title: 'Kitchensink', href: 'kitchensink' },
+      { title: 'Example', href: 'example' }
     ]
+    riot.router.on('route:updated', function() {
+      this.update();
+    }.bind(this));
   </script>
 </navigation>

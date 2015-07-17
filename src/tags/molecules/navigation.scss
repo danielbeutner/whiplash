@@ -1,13 +1,15 @@
 navigation {
   nav {
     display: block;
+    background-color: #000;
     ul {
+      margin: 0;
       li {
         display: inline-block;
         line-height: $base-line-height;
         padding: $base-line-height;
         :any-link {
-          color: blue;
+          color: white;
         }
       }
     }

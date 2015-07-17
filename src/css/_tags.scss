@@ -2,23 +2,11 @@ app {
   display: block;
   position: relative;
   overflow: hidden;
-}
-navigation {
-  nav {
+  route {
     display: block;
-    ul {
-      li {
-        display: inline-block;
-        line-height: $base-line-height;
-        padding: $base-line-height;
-        :any-link {
-          color: blue;
-        }
-      }
-    }
+    padding: $base-line-height $base-line-height;
   }
 }
-
 btn {
   > button {
     border: 1px solid #666;
@@ -48,3 +36,20 @@ btn {
 .icon-hamburger::before { content: "\EA05" }
 .icon-search::before { content: "\EA06" }
 .icon-whiplash::before { content: "\EA07" }
+navigation {
+  nav {
+    display: block;
+    background-color: #000;
+    ul {
+      margin: 0;
+      li {
+        display: inline-block;
+        line-height: $base-line-height;
+        padding: $base-line-height;
+        :any-link {
+          color: white;
+        }
+      }
+    }
+  }
+}

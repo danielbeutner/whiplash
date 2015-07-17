@@ -35,6 +35,7 @@
     "lost": "^6.5.0",
     "require-dir": "^0.3.0",
     "riot": "^2.2.1",
+    "riot-router": "^0.6.1",
     "riotify": "^0.1.2",
     "vinyl-source-stream": "^1.1.0"
   }

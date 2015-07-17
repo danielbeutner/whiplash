@@ -1,5 +1,4 @@
 <app>
-  <navigation />
-  <kitchensink />
-  <example />
+  <navigation/>
+  <route/>
 </app>

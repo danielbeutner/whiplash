@@ -1,8 +1,22 @@
-var R = window.R = window.riot = require('riot');
-var $ = window.$ = window.jQuery = require('jquery');
+var $ = require('jquery');
+var riot = require('riot');
+    riot.router = require('riot-router');
 
-// Mount all tags
-R.mount('*');
+var Route = riot.router.Route,
+    DefaultRoute = riot.router.DefaultRoute,
+    NotFoundRoute = riot.router.NotFoundRoute,
+    RedirectRoute = riot.router.RedirectRoute;
+
+riot.router.routes([
+  new DefaultRoute({tag: 'welcome'}),
+  new Route({tag: 'kitchensink'}),
+  new Route({tag: 'example'}),
+  new NotFoundRoute({tag: 'not-found'}),
+  new RedirectRoute({from: 'x', to: 'example'})
+]);
+
+riot.mount('*');
+riot.router.start();
 
 // Initial state
 $(window).load(function () {
