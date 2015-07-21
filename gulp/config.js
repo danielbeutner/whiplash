@@ -28,10 +28,10 @@ module.exports = {
     dest: dest + "/assets"
   },
   icons: {
-    src: src + "/icons/icons-14px.sketch",
+    src: src + "/icons/icons.sketch",
     name: "icon",
     template: {
-      name: "whiplash-style",
+      name: "icons",
       src: src + "/icons/templates/"
     },
     dest: {

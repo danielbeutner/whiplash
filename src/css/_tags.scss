@@ -4,16 +4,26 @@ app {
   overflow: hidden;
   route {
     display: block;
-    padding: $base-line-height $base-line-height;
+    padding: $base-line-height * 4 $base-line-height $base-line-height;
   }
 }
 btn {
   > button {
-    border: 1px solid #666;
+    @include depth(2);
+    border: 0;
     background-color: transparent;
+    margin: $base-line-height / 2 0;
     padding: $base-line-height / 2 $base-line-height;
     &:hover {
-      background-color: transparentize($black, 0.95);
+      background-color: transparentize($main-color, 0.95);
+    }
+    &:focus {
+      background-color: transparentize($main-color, 0.95);
+    }
+    &:active {
+      background-color: transparentize($main-color, 0.95);
+      outline: none;
+      @include depth(1);
     }
   }
 }
@@ -29,25 +39,70 @@ btn {
   font-style: normal;
 }
 
-.icon-chevron-down::before { content: "\EA01" }
-.icon-chevron-left::before { content: "\EA02" }
-.icon-chevron-right::before { content: "\EA03" }
-.icon-chevron-up::before { content: "\EA04" }
-.icon-hamburger::before { content: "\EA05" }
-.icon-search::before { content: "\EA06" }
-.icon-whiplash::before { content: "\EA07" }
+.chevron-down::before { content: "\EA01" }
+.chevron-left::before { content: "\EA02" }
+.chevron-right::before { content: "\EA03" }
+.chevron-up::before { content: "\EA04" }
+.hamburger::before { content: "\EA05" }
+.search::before { content: "\EA06" }
+.whiplash::before { content: "\EA07" }
+$panel-header-bg: $main-color;
+$panel-footer-bg: transparentize($main-color, 0.95);
+$panel-padding: $base-line-height;
+
+panel,
+panel-header,
+panel-content,
+panel-footer {
+  display: block;
+}
+
+panel {
+  @include depth(1);
+  overflow: hidden;
+  margin: $base-line-height 0;
+  &-header,
+  &-content,
+  &-footer {
+    padding: $panel-padding;
+  }
+  &-header {
+    color: #FFF;
+    background-color: $panel-header-bg;
+  }
+  &-footer {
+    color: $main-color;
+    background-color: $panel-footer-bg;
+  }
+}
 navigation {
+  @include depth(2);
+  background-color: $main-color;
+  display: block;
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  .menu {
+    display: inline-block;
+    padding: $base-line-height;
+    color: $main-bg;
+    &:hover {
+      color: #FFF;
+    }
+  }
   nav {
-    display: block;
-    background-color: #000;
     ul {
       margin: 0;
       li {
-        display: inline-block;
-        line-height: $base-line-height;
-        padding: $base-line-height;
         :any-link {
-          color: white;
+          color: $main-bg;
+          display: block;
+          line-height: $base-line-height;
+          padding: $base-line-height;
+          text-decoration: none;
+          &:hover {
+            color: $main-color;
+            background-color: $main-bg;
+          }
         }
       }
     }

@@ -7,6 +7,7 @@
     <li>SCSS support</li>
     <li>Browserify support</li>
     <li>Browser-Sync support</li>
+
     <li>Organized gulp tasks</li>
     <li>Plain HTML and JavaScript</li>
     <li>Icon generator</li>

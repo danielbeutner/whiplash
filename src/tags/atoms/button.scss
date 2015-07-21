@@ -1,10 +1,20 @@
 btn {
   > button {
-    border: 1px solid #666;
+    @include depth(2);
+    border: 0;
     background-color: transparent;
+    margin: $base-line-height / 2 0;
     padding: $base-line-height / 2 $base-line-height;
     &:hover {
-      background-color: transparentize($black, 0.95);
+      background-color: transparentize($main-color, 0.95);
+    }
+    &:focus {
+      background-color: transparentize($main-color, 0.95);
+    }
+    &:active {
+      background-color: transparentize($main-color, 0.95);
+      outline: none;
+      @include depth(1);
     }
   }
 }

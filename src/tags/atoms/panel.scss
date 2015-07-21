@@ -1,0 +1,29 @@
+$panel-header-bg: $main-color;
+$panel-footer-bg: transparentize($main-color, 0.95);
+$panel-padding: $base-line-height;
+
+panel,
+panel-header,
+panel-content,
+panel-footer {
+  display: block;
+}
+
+panel {
+  @include depth(1);
+  overflow: hidden;
+  margin: $base-line-height 0;
+  &-header,
+  &-content,
+  &-footer {
+    padding: $panel-padding;
+  }
+  &-header {
+    color: #FFF;
+    background-color: $panel-header-bg;
+  }
+  &-footer {
+    color: $main-color;
+    background-color: $panel-footer-bg;
+  }
+}

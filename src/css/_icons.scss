@@ -1,4 +1,4 @@
-.icon {
+icon > i {
   font-size: $base-font-size;
   line-height: 0;
   display: inline-block;
@@ -11,19 +11,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  &-s {
+  &.s {
     font-size: 0.875rem;
   }
-  &-m {
+  &.m {
     font-size: 1.4375rem;
   }
-  &-l {
+  &.l {
     font-size: 2.3125rem;
   }
-  &-xl {
+  &.xl {
     font-size: 3.6875rem;
   }
-  &-fw {
+  &.fw {
     text-align: center;
     width: 1.2857142857142858rem;
   }

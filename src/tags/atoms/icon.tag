@@ -1,5 +1,5 @@
 <icon>
-  <i class="icon icon-{ icon } icon-{ size }">
+  <i class="icon { icon } { size }">
   <script>
     this.icon = opts.name;
     this.size = opts.size;

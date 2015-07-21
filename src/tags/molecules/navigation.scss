@@ -1,15 +1,31 @@
 navigation {
+  @include depth(2);
+  background-color: $main-color;
+  display: block;
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  .menu {
+    display: inline-block;
+    padding: $base-line-height;
+    color: $main-bg;
+    &:hover {
+      color: #FFF;
+    }
+  }
   nav {
-    display: block;
-    background-color: #000;
     ul {
       margin: 0;
       li {
-        display: inline-block;
-        line-height: $base-line-height;
-        padding: $base-line-height;
         :any-link {
-          color: white;
+          color: $main-bg;
+          display: block;
+          line-height: $base-line-height;
+          padding: $base-line-height;
+          text-decoration: none;
+          &:hover {
+            color: $main-color;
+            background-color: $main-bg;
+          }
         }
       }
     }
