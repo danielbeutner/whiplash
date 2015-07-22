@@ -1,9 +1,8 @@
 app.loading {
-  border-bottom: .8rem solid rgba(200, 200, 200, 0.2);
-  border-left: .8rem solid #333;
-  border-right: .8rem solid rgba(200, 200, 200, 0.2);
-  border-top: .8rem solid rgba(200, 200, 200, 0.2);
-  font-size: 10px;
+  border-bottom: $base-line-height / 2 solid transparentize($main-color, 0.90);
+  border-left: $base-line-height / 2 solid $main-color;
+  border-right: $base-line-height / 2 solid transparentize($main-color, 0.90);
+  border-top: $base-line-height / 2 solid transparentize($main-color, 0.90);
   margin: 40vh auto;
   position: relative;
   text-indent: -9999em;
@@ -12,8 +11,8 @@ app.loading {
   &,
   &::after {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: $base-line-height * 4;
+    height: $base-line-height * 4;
   }
 }
 app.loading * {
