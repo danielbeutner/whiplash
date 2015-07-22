@@ -1,6 +1,13 @@
 /*
  * Lost grid via postCSS
  */
-row > column {
-  lost-column: 1/2;
+@media #{$tablet} {
+  row > column {
+    lost-column: 1/2;
+  }
+}
+@media #{$desktop} {
+  row > column {
+    lost-column: 1/2;
+  }
 }
