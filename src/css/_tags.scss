@@ -4,7 +4,7 @@ app {
   overflow: hidden;
   route {
     display: block;
-    padding: $base-line-height * 4 $base-line-height $base-line-height;
+    padding: $base-line-height * 2 $base-line-height $base-line-height;
   }
 }
 btn {
@@ -49,6 +49,7 @@ btn {
 $panel-header-bg: $main-color;
 $panel-footer-bg: transparentize($main-color, 0.95);
 $panel-padding: $base-line-height;
+$panel-margin: $base-line-height;
 
 panel,
 panel-header,
@@ -60,7 +61,7 @@ panel-footer {
 panel {
   @include depth(1);
   overflow: hidden;
-  margin: $base-line-height 0;
+  margin: $panel-margin * 2 0;
   &-header,
   &-content,
   &-footer {
