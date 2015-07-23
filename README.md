@@ -4,6 +4,7 @@ The power of riot and browserify within a gulp starter-kit.
 
 No bullshit bingo...
 
+- Atomic design (pattern lab)
 - Automated loading of all tags including precompile
 - SCSS support
 - Browserify support

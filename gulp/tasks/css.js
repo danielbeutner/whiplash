@@ -24,6 +24,6 @@ gulp.task('css', ['tags'], function() {
         .pipe(sass()).on('error', errors)
         .pipe(postcss(processors))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('app'))
+    .pipe(gulp.dest(config.dest))
     .pipe(sync.stream({match: '**/*.css'}));
 });

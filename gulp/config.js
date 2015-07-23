@@ -39,5 +39,14 @@ module.exports = {
       fontcss: "assets/fonts",
       tag: src + "/tags/atoms"
     }
+  },
+  styleguide: {
+    src: 'src/css',
+    mask: '"*.scss"',
+    dest: 'app/styleguide',
+    template: 'src/styleguide',
+    homepage: 'styleguide.md',
+    css: '../app.css',
+    js: '../app.js'
   }
 };

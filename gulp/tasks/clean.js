@@ -20,3 +20,7 @@ gulp.task('clean:js', function(cb) {
 gulp.task('clean:assets', function(cb) {
     del(['app/assets'], cb)
 });
+
+gulp.task('clean:styleguide', function(cb) {
+    del(['app/styleguide'], cb)
+});
