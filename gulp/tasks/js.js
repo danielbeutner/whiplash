@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     glob = require('glob'),
     sync = require('browser-sync'),

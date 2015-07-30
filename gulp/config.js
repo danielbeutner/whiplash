@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var src = "./src",
     dest = "./app";
 

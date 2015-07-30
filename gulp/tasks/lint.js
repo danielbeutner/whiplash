@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     lint = require('gulp-jshint'),
     stylish = require('jshint-stylish'),

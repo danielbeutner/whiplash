@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     sync = require('browser-sync'),
     config = require('../config').html;

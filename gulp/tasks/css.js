@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),

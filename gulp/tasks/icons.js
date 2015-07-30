@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require("gulp"),
     rename = require("gulp-rename"),
     sketch = require("gulp-sketch"),

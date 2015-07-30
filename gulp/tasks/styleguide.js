@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     shell = require('gulp-shell'),
     config = require('../config').styleguide;

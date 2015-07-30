@@ -1,3 +1,6 @@
+/*jslint node: true */
+'use strict';
+
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     config = require('../config').tags;
