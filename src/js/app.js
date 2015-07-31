@@ -1,20 +1,25 @@
-var $ = window.$ = require('jquery');
-var riot = require('riot');
-    riot.router = require('riot-router');
+(function () {
+  'use strict';
 
-var Route = riot.router.Route,
-    DefaultRoute = riot.router.DefaultRoute,
-    NotFoundRoute = riot.router.NotFoundRoute,
-    RedirectRoute = riot.router.RedirectRoute;
+  var $ = window.$ = require('jquery');
+  var riot = require('riot');
+      riot.router = require('riot-router');
 
-riot.router.routes([
-  new DefaultRoute({tag: 'welcome'}),
-  new Route({tag: 'kitchensink'}),
-  new Route({tag: 'example'}),
-  new Route({tag: 'icons'}),
-  new NotFoundRoute({tag: 'not-found'}),
-  new RedirectRoute({from: 'x', to: 'example'})
-]);
+  var Route = riot.router.Route,
+      DefaultRoute = riot.router.DefaultRoute,
+      NotFoundRoute = riot.router.NotFoundRoute,
+      RedirectRoute = riot.router.RedirectRoute;
 
-riot.mount('*');
-riot.router.start();
+  riot.router.routes([
+    new DefaultRoute({tag: 'welcome'}),
+    new Route({tag: 'kitchensink'}),
+    new Route({tag: 'example'}),
+    new Route({tag: 'icons'}),
+    new NotFoundRoute({tag: 'not-found'}),
+    new RedirectRoute({from: 'x', to: 'example'})
+  ]);
+
+  riot.mount('*');
+  riot.router.start();
+}());
+
