@@ -1,13 +1,8 @@
 /*
 
-App
+  App
 
-Your starter tag with routing and navigation
-
-Styleguide templates.app
-
-*/
-
+ */
 app {
   display: block;
   position: relative;
@@ -19,40 +14,30 @@ app {
 }
 /*
 
-Buttons
+  Buttons
 
-Your starter tag
-
-Markup: <btn>Your button</btn>
-
-:hover     - Highlight the button when hovered.
-:disabled  - Make the button change appearance to reflect it being disabled.
-:active    - "Press" the button down when clicked.
-
-
-Styleguide atoms.button
-
-*/
-btn {
-  > button {
-    @include depth(2);
-    border: 0;
-    background-color: transparent;
-    margin: $base-line-height / 2 0;
-    padding: $base-line-height / 2 $base-line-height;
-    &:hover {
-      background-color: transparentize($main-color, 0.95);
-    }
-    &:focus {
-      background-color: transparentize($main-color, 0.95);
-    }
-    &:active {
-      background-color: transparentize($main-color, 0.95);
-      outline: none;
-      @include depth(1);
-    }
+ */
+button {
+  @include depth(2);
+  border: 0;
+  background-color: transparent;
+  margin: $base-line-height / 2 0;
+  padding: $base-line-height / 2 $base-line-height;
+  &:hover,
+  &:focus {
+    background-color: lighten($main-color, 47.5%);
+  }
+  &:active {
+    background-color: lighten($main-color, 47.5%);
+    outline: none;
+    @include depth(0);
   }
 }
+/*
+
+  Icons
+
+ */
 @font-face {
   font-family: "icon";
   src: url('assets/fonts/icon.eot');
@@ -72,8 +57,28 @@ btn {
 .hamburger::before { content: "\EA05" }
 .search::before { content: "\EA06" }
 .whiplash::before { content: "\EA07" }
+/*
+
+  Logo
+
+ */
+logo {
+  display: block;
+  float: right;
+  padding: $base-line-height;
+  & div,
+  & div i {
+    color: $main-bg;
+    font-size: $base-line-height;
+  }
+}
+/*
+
+  Panel
+
+ */
 $panel-header-bg: $main-color;
-$panel-footer-bg: transparentize($main-color, 0.95);
+$panel-footer-bg: lighten($main-color, 47.5%);
 $panel-padding: $base-line-height;
 $panel-margin: $base-line-height;
 
@@ -102,6 +107,11 @@ panel {
     background-color: $panel-footer-bg;
   }
 }
+/*
+
+  Panel
+
+ */
 navigation {
   @include depth(2);
   background-color: $main-color;

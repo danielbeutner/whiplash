@@ -1,36 +1,21 @@
 /*
 
-Buttons
+  Buttons
 
-Your starter tag
-
-Markup: <btn>Your button</btn>
-
-:hover     - Highlight the button when hovered.
-:disabled  - Make the button change appearance to reflect it being disabled.
-:active    - "Press" the button down when clicked.
-
-
-Styleguide atoms.button
-
-*/
-btn {
-  > button {
-    @include depth(2);
-    border: 0;
-    background-color: transparent;
-    margin: $base-line-height / 2 0;
-    padding: $base-line-height / 2 $base-line-height;
-    &:hover {
-      background-color: transparentize($main-color, 0.95);
-    }
-    &:focus {
-      background-color: transparentize($main-color, 0.95);
-    }
-    &:active {
-      background-color: transparentize($main-color, 0.95);
-      outline: none;
-      @include depth(1);
-    }
+ */
+button {
+  @include depth(2);
+  border: 0;
+  background-color: transparent;
+  margin: $base-line-height / 2 0;
+  padding: $base-line-height / 2 $base-line-height;
+  &:hover,
+  &:focus {
+    background-color: lighten($main-color, 47.5%);
+  }
+  &:active {
+    background-color: lighten($main-color, 47.5%);
+    outline: none;
+    @include depth(0);
   }
 }

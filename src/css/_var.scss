@@ -1,7 +1,7 @@
 // Colors
-$main-color: #199;
-$second-color: #F88;
-$main-bg: #CEE;
+$main-color: #89609E;
+$second-color: invert($main-color);
+$main-bg: lighten($main-color, 35%);
 
 // Typography
 $font-weight: 300;

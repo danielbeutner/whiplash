@@ -1,4 +1,5 @@
 <navigation>
+  <logo/>
   <a class="menu" href="#/"><icon name="hamburger" size="l"/></a>
   <nav>
     <ul>

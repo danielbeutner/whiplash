@@ -7,7 +7,7 @@ No bullshit bingo...
 - Atomic design (pattern lab)
 - Automated loading of all tags including precompile
 - SCSS support
-- Browserify support
+- Browserify & Vorlon support
 - Browser-Sync support
 - Organized gulp tasks
 - Plain HTML and JavaScript

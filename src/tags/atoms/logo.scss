@@ -1,0 +1,15 @@
+/*
+
+  Logo
+
+ */
+logo {
+  display: block;
+  float: right;
+  padding: $base-line-height;
+  & div,
+  & div i {
+    color: $main-bg;
+    font-size: $base-line-height;
+  }
+}

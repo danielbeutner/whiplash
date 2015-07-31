@@ -1,5 +1,10 @@
+/*
+
+  Panel
+
+ */
 $panel-header-bg: $main-color;
-$panel-footer-bg: transparentize($main-color, 0.95);
+$panel-footer-bg: lighten($main-color, 47.5%);
 $panel-padding: $base-line-height;
 $panel-margin: $base-line-height;
 
