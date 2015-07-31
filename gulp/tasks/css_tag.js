@@ -3,9 +3,9 @@
 
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
-    config = require('../config').tags;
+    config = require('../config').css.tag;
 
-gulp.task('tags', function() {
+gulp.task('css_tag', function() {
   // tags
   gulp.src(config.src)
     .pipe(concat('_tags.scss'))

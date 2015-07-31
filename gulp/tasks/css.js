@@ -2,6 +2,8 @@
 'use strict';
 
 var gulp = require('gulp'),
+    util = require('gulp-util'),
+    concat = require('gulp-concat'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -14,7 +16,7 @@ var gulp = require('gulp'),
     errors = require('../util/errors'),
     config = require('../config').css;
 
-gulp.task('css', ['tags'], function() {
+gulp.task('css', function() {
   var processors = [
         autoprefixer({browsers: ['last 2 version']}),
         mqpacker,

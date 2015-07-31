@@ -2,29 +2,32 @@
 'use strict';
 
 var src = "./src",
-    dest = "./app";
+    dest = "./app",
+    debug = false;
 
 module.exports = {
+  debug: debug,
   watch: {
-    src: src,
-    dest: dest
+    src: dest
   },
   css: {
     src: src + "/css/**/*.{sass,scss}",
-    dest: dest
+    dest: dest,
+    tag: {
+      src: src + "/tags/**/*.{sass,scss}",
+      dest: src + "/css"
+    },
   },
   js: {
     src: src + '/js/app.js',
     dest: dest,
-    tags: src + '/tags/**/*.tag'
+    tag: {
+      src: src + '/tags/**/*.tag'
+    }
   },
   html: {
-    src: src + "/html/*.html",
+    src: src + "/html/app.mustache",
     dest: dest + "/"
-  },
-  tags: {
-    src: src + "/tags/**/*.{sass,scss}",
-    dest: src + "/css"
   },
   assets: {
     src: src + "/assets/**/*",

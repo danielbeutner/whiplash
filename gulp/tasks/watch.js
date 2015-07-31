@@ -3,33 +3,34 @@
 
 var gulp = require('gulp'),
     sync = require('browser-sync'),
-    config = {
-      watch: require('../config').watch,
-      css: require('../config').css,
-      js: require('../config').js,
-      html: require('../config').html,
-      tags: require('../config').tags,
-      icons: require('../config').icons,
-      assets: require('../config').assets
-    };
+    shell = require('gulp-shell'),
+    config = require('../config');
 
-gulp.task('watch', function() {
+gulp.task('watch',['assets', 'css', 'js', 'html'], function() {
+  /* Start Vorlon server */
+  var vorlon = config.debug ? require('vorlon') : undefined;
+  /* Start Browsersync */
   sync.init({
-    server: config.watch.dest,
+    server: config.watch.src,
     index: 'app.html'
   });
+  /* Assets */
   gulp.watch(config.assets.src,
              { debounceDelay: 6000 },
              ['assets']);
-  gulp.watch(config.html.src,
-             ['html']);
   gulp.watch([config.icons.src],
              { debounceDelay: 3000 },
              ['icons']);
+  /* HTML, CSS and JS*/
   gulp.watch(config.html.src,
              ['html']);
-  gulp.watch([config.js.src,config.js.tags],
-             ['js']);
-  gulp.watch([config.css.src,config.tags.src],
+  gulp.watch([config.css.tag.src],
+             { debounceDelay: 500 },
+             ['css_tag']);
+  gulp.watch([config.css.src],
+             { debounceDelay: 500 },
              ['css']);
+  gulp.watch([config.js.src, config.js.tag.src],
+             { debounceDelay: 1000 },
+             ['js']);
 });
