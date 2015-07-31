@@ -12,7 +12,7 @@ var gulp = require('gulp'),
     tags = [];
 
 gulp.task('js', function() {
-  tags = glob.sync(config.tags);
+  tags = glob.sync(config.tag.src);
   return browserify({
     debug: false,
     entries: [tags, config.src],
