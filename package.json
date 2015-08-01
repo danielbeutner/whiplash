@@ -1,6 +1,6 @@
 {
   "name": "whiplash",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The power of riot and browserify within a gulp starter-kit.",
   "main": "gulpfile.js",
   "scripts": {
