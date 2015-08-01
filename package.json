@@ -1,6 +1,6 @@
 {
   "name": "whiplash",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "The power of riot and browserify within a gulp starter-kit.",
   "main": "gulpfile.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "Daniel Ditgens",
   "license": "MIT",
   "devDependencies": {
-    "assemble": "^0.6.0-beta.5",
     "autoprefixer-core": "^5.2.1",
     "browser-sync": "^2.7.7",
     "browserify": "^10.2.4",
@@ -33,7 +32,6 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-util": "^3.0.6",
     "jquery": "^2.1.4",
-    "jshint-stylish": "^2.0.1",
     "kss": "^2.1.0",
     "lodash": "^3.10.0",
     "lost": "^6.5.0",
