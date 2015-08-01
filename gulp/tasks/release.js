@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     git = require('gulp-git'),
     bump = require('gulp-bump'),
     filter = require('gulp-filter'),
+    util = require('gulp-util'),
     tag = require('gulp-tag-version');
 
 function release(type) {
@@ -16,6 +17,6 @@ function release(type) {
     .pipe(tag());
 }
 
-gulp.task('patch', function() { return release('patch'); });
-gulp.task('feature', function() { return release('minor'); });
-gulp.task('release', function() { return release('major'); });
+gulp.task('release', function() { return release('patch'); });
+gulp.task('release:minor', function() { return release('minor'); });
+gulp.task('release:major', function() { return release('major'); });
