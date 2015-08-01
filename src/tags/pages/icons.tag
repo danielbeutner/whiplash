@@ -2,7 +2,6 @@
   <h1>Icons</h1>
   <row>
     <column>
-      <p><icon name="whiplash" size="m"/> Whiplash Logo</p>
       <p><icon name="search" size="m"/> Search</p>
       <p><icon name="hamburger" size="m"/> Hambuger</p>
     </column>
