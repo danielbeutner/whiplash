@@ -1,29 +1,11 @@
-icon > i {
-  font-size: $base-font-size;
+icon > span {
   display: inline-block;
-  vertical-align: middle;
-  &::before {
-    display: inline-block;
-    font-family: "icon";
-    font-style: normal;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  &.s {
-    font-size: 0.875rem;
-  }
-  &.m {
-    font-size: 1.25rem;
-  }
-  &.l {
-    font-size: 2.1875rem;
-  }
-  &.xl {
-    font-size: 3.125rem;
-  }
-  &.fw {
-    text-align: center;
-    width: 1rem;
-  }
+  font-family: "icon";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  top: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

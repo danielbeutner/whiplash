@@ -1,6 +1,9 @@
 <navigation>
-  <logo/>
-  <a class="menu" href="#/"><icon name="hamburger" size="l"/></a>
+  <a class="menu" href="#/">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
   <nav>
     <ul>
       <li each={ items }><a href="#/{ href }">{ title }</a></li>
@@ -20,14 +23,15 @@
     }.bind(this));
     // On mount set initial state and events
     this.on('mount', function () {
-      $('a.menu + nav').hide().on('click', function(e) {
-        $(this).hide();
+      $('navigation nav').on('click', function (e) {
+        var $this = $(this).parent();
+        $this.removeClass('open');
       });
-      $('a.menu').on('click', function (e) {
-          e.preventDefault();
-          var $this = $(this);
-          $this.next('nav').is(':visible') ? $this.next('nav').hide() : $this.next('nav').show();
-        });
+      $('navigation .menu').on('click', function (e) {
+        e.preventDefault();
+        var $this = $(this).parent();
+        $this.hasClass('open') ? $this.removeClass('open') : $this.addClass('open');
+      });
     });
   </script>
 </navigation>

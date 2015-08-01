@@ -1,6 +1,9 @@
-// baseline mixin
-// needs global $base-line-height
-// and $lines
+/**
+ * Computes baseline.
+ *
+ * @param {Number} $lines - number of lines
+ *
+ */
 
 @mixin baseline($lines) {
   line-height: $base-line-height * $lines;

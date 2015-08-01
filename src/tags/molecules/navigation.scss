@@ -8,16 +8,34 @@ navigation {
   background-color: $main-color;
   display: block;
   position: fixed;
-  left: 0; right: 0; top: 0;
+  left: 0; right: 0; top: 0; z-index: 1;
+  line-height: 0;
   .menu {
     display: inline-block;
+    text-decoration: none;
     padding: $base-line-height;
-    color: $main-bg;
-    &:hover {
-      color: #FFF;
+    span {
+      margin: $base-line-height / 3 0;
+      display: block;
+      height: $base-line-height / 8;
+      width: $base-line-height * 1.6;
+      background-color: $main-bg;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &:hover span {
+      background-color: lighten($main-bg, 50%);
     }
   }
+  &.open nav {
+      display: block;
+  }
   nav {
+    display: none;
     ul {
       margin: 0;
       li {
@@ -29,7 +47,7 @@ navigation {
           text-decoration: none;
           &:hover {
             color: $main-color;
-            background-color: $main-bg;
+            background-color: lighten($main-bg, 50%);
           }
         }
       }

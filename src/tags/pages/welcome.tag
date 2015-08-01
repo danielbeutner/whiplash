@@ -1,5 +1,5 @@
 <welcome>
-  <h1><icon name="whiplash" size="xl" />hiplash</h1>
+  <h1>Whiplash</h1>
   <p>The power of riot and browserify within a gulp starter-kit.</p>
   <p>No bullshit bingo...</p>
   <ul>
