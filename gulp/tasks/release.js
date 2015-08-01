@@ -11,7 +11,7 @@ function release(type) {
   return gulp.src(['./package.json'])
     .pipe(bump({type: type}))
     .pipe(gulp.dest('./'))
-    .pipe(git.commit('bumps package version'))
+    .pipe(git.commit('Release'))
     .pipe(filter('package.json'))
     .pipe(tag());
 }
