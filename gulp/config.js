@@ -43,16 +43,7 @@ module.exports = {
     dest: {
       font: src + "/assets/fonts",
       fontcss: "assets/fonts",
-      tag: src + "/tags/atoms"
+      tag: src + "/tags/elements"
     }
-  },
-  styleguide: {
-    src: 'src/css',
-    mask: '"*.scss"',
-    dest: 'app/styleguide',
-    template: 'src/styleguide',
-    homepage: 'styleguide.md',
-    css: '../app.css',
-    js: '../app.js'
   }
 };

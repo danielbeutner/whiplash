@@ -4,7 +4,7 @@ The power of riot and browserify within a gulp starter-kit.
 
 No bullshit bingo...
 
-- Atomic design (pattern lab)
+- Elements, modules and pattern
 - Automated loading of all tags including precompile
 - SCSS support
 - Browserify & Vorlon support
@@ -51,9 +51,9 @@ src
 |-icons/            // Raw icon files and templates
 |-js/               // JavaScript stuff
 |-tags/             // Tags with .tag and .scss files
-  |-atoms/          // Atoms - the smallest component
-  |-molecules/      // Molecules - component with more than one atom
-  |-organism/       // Organisms - component with more than one molecule
+  |-elements/       // Elements - the smallest component
+  |-modules/        // Modules - component with more than one element
+  |-pattern/        // Pattern - component with more than one module and elements
   |-pages/          // Pages - complete pages with content and functionality
   |-templates/      // Templates - abstract of a page, only structure
   |-app.scss        // Global style for <app> tag
