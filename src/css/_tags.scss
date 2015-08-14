@@ -14,6 +14,84 @@ app {
 }
 /*
 
+  Panel
+
+ */
+navigation {
+  @include depth(2);
+  background-color: $main-color;
+  display: block;
+  position: fixed;
+  left: 0; right: 0; top: 0; z-index: 1;
+  line-height: 0;
+  .menu {
+    display: inline-block;
+    text-decoration: none;
+    padding: $base-line-height;
+    span {
+      margin: $base-line-height / 3 0;
+      display: block;
+      height: $base-line-height / 8;
+      width: $base-line-height * 1.6;
+      background-color: $main-bg;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &:hover span {
+      background-color: lighten($main-bg, 50%);
+    }
+  }
+}
+
+/*
+
+  Sidebar
+
+ */
+$sidebar-width: 15rem;
+
+sidebar {
+  @include depth(1);
+  position: fixed;
+  padding-top: $base-line-height * 4;
+  background-color: $main-bg;
+  left: 0; right: auto; top: 0; bottom: 0; z-index: 0;
+  width: $sidebar-width;
+  nav {
+    position: relative;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li {
+        a {
+          padding: $base-line-height $base-line-height * 2;
+          color: $main-color;
+          display: block;
+          text-decoration: none;
+          &:hover {
+            background-color: lighten($main-bg, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+/* Animation
+ */
+sidebar {
+  transition: left 0.25s ease-in;
+  left: -$sidebar-width;
+  &.open {
+    left: 0;
+  }
+}
+/*
+
   Buttons
 
  */
@@ -31,6 +109,15 @@ button {
     background-color: lighten($main-color, 47.5%);
     outline: none;
     @include depth(0);
+  }
+}
+divider {
+  hr {
+    background-color: $main-color;
+    border: 0;
+    height: $base-line-height / 8;
+    margin: $base-line-height / 8 0;
+    padding: 0;
   }
 }
 @font-face {
@@ -99,61 +186,5 @@ panel {
   &-footer {
     color: $main-color;
     background-color: $panel-footer-bg;
-  }
-}
-/*
-
-  Panel
-
- */
-navigation {
-  @include depth(2);
-  background-color: $main-color;
-  display: block;
-  position: fixed;
-  left: 0; right: 0; top: 0; z-index: 1;
-  line-height: 0;
-  .menu {
-    display: inline-block;
-    text-decoration: none;
-    padding: $base-line-height;
-    span {
-      margin: $base-line-height / 3 0;
-      display: block;
-      height: $base-line-height / 8;
-      width: $base-line-height * 1.6;
-      background-color: $main-bg;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      &:first-child {
-        margin-top: 0;
-      }
-    }
-    &:hover span {
-      background-color: lighten($main-bg, 50%);
-    }
-  }
-  &.open nav {
-      display: block;
-  }
-  nav {
-    display: none;
-    ul {
-      margin: 0;
-      li {
-        :any-link {
-          color: $main-bg;
-          display: block;
-          line-height: $base-line-height;
-          padding: $base-line-height;
-          text-decoration: none;
-          &:hover {
-            color: $main-color;
-            background-color: lighten($main-bg, 50%);
-          }
-        }
-      }
-    }
   }
 }

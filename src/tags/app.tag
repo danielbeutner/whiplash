@@ -1,5 +1,6 @@
 <app class="loading">
   <navigation/>
+  <sidebar/>
   <route/>
   <script>
     this.on('mount', function () {

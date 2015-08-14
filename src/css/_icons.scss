@@ -6,6 +6,7 @@ icon > span {
   line-height: 1;
   position: relative;
   top: 1px;
+  z-index: -1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

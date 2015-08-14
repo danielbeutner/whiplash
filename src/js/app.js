@@ -11,12 +11,10 @@
       RedirectRoute = riot.router.RedirectRoute;
 
   riot.router.routes([
-    new DefaultRoute({tag: 'welcome'}),
-    new Route({tag: 'kitchensink'}),
-    new Route({tag: 'example'}),
+    new DefaultRoute({tag: 'kitchensink'}),
     new Route({tag: 'icons'}),
     new NotFoundRoute({tag: 'not-found'}),
-    new RedirectRoute({from: 'x', to: 'example'})
+    new RedirectRoute({from: 'kitchensink', to: ''})
   ]);
 
   riot.mount('*');

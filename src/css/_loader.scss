@@ -15,10 +15,10 @@ app.loading {
     height: $base-line-height * 4;
   }
 }
-app.loading * {
+app.loading > * {
   opacity: 0;
 }
-app * {
+app > * {
   transition: opacity 0.5s linear;
   opacity: 1;
 }

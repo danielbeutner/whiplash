@@ -1,5 +1,5 @@
 <kitchensink>
-  <panel header="Typography">
+  <panel id="typography" header="Typography">
     <h1>Headline 1</h1>
     <h2>Headline 2</h2>
     <h3>Headline 3</h3>
@@ -57,14 +57,16 @@
       <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
     </blockquote>
   </panel>
-  <panel header="Box for anything" footer="This is a footer! Yay!">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quae architecto quas libero beatae illum corporis aut debitis neque, ratione ducimus nulla reiciendis enim fugit laboriosam soluta ipsa harum, vitae.
-  </panel>
-  <panel header="Only header">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est nesciunt dolore eveniet, reprehenderit tenetur voluptate, sed deserunt minus nisi modi autem nobis officiis molestiae assumenda nemo error illum. Rerum.
-    <btn size="l">Dismiss</btn>
-  </panel>
-  <panel>
-    Naked but sexy
+  <panel id="panels" header="Panels">
+    <panel header="Panel with header and footer" footer="This is a footer! Yay!">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quae architecto quas libero beatae illum corporis aut debitis neque, ratione ducimus nulla reiciendis enim fugit laboriosam soluta ipsa harum, vitae.
+    </panel>
+    <panel header="Panel with header only">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, est nesciunt dolore eveniet, reprehenderit tenetur voluptate, sed deserunt minus nisi modi autem nobis officiis molestiae assumenda nemo error illum. Rerum.
+      <btn size="l">Dismiss</btn>
+    </panel>
+    <panel>
+      Panel without header and footer
+    </panel>
   </panel>
 </kitchensink>

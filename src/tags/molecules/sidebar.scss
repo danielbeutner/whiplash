@@ -1,0 +1,43 @@
+/*
+
+  Sidebar
+
+ */
+$sidebar-width: 15rem;
+
+sidebar {
+  @include depth(1);
+  position: fixed;
+  padding-top: $base-line-height * 4;
+  background-color: $main-bg;
+  left: 0; right: auto; top: 0; bottom: 0; z-index: 0;
+  width: $sidebar-width;
+  nav {
+    position: relative;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      li {
+        a {
+          padding: $base-line-height $base-line-height * 2;
+          color: $main-color;
+          display: block;
+          text-decoration: none;
+          &:hover {
+            background-color: lighten($main-bg, 10%);
+          }
+        }
+      }
+    }
+  }
+}
+/* Animation
+ */
+sidebar {
+  transition: left 0.25s ease-in;
+  left: -$sidebar-width;
+  &.open {
+    left: 0;
+  }
+}

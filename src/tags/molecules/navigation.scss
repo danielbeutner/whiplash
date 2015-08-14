@@ -31,26 +31,4 @@ navigation {
       background-color: lighten($main-bg, 50%);
     }
   }
-  &.open nav {
-      display: block;
-  }
-  nav {
-    display: none;
-    ul {
-      margin: 0;
-      li {
-        :any-link {
-          color: $main-bg;
-          display: block;
-          line-height: $base-line-height;
-          padding: $base-line-height;
-          text-decoration: none;
-          &:hover {
-            color: $main-color;
-            background-color: lighten($main-bg, 50%);
-          }
-        }
-      }
-    }
-  }
 }

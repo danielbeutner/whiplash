@@ -1,0 +1,9 @@
+divider {
+  hr {
+    background-color: $main-color;
+    border: 0;
+    height: $base-line-height / 8;
+    margin: $base-line-height / 8 0;
+    padding: 0;
+  }
+}
