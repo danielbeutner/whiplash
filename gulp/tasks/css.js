@@ -1,16 +1,13 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp'),
-    util = require('gulp-util'),
-    concat = require('gulp-concat'),
     postcss = require('gulp-postcss'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     autoprefixer = require('autoprefixer-core'),
     mqpacker = require('css-mqpacker'),
     lost = require('lost'),
-    csswring = require('csswring'),
+    // csswring = require('csswring'),
     cssnext = require('cssnext'),
     sync = require('browser-sync'),
     errors = require('../util/errors'),
@@ -24,7 +21,7 @@ gulp.task('css', function() {
         cssnext()
       ];
 
-  gulp.src(config.src)
+  return gulp.src(config.src)
     .pipe(sourcemaps.init())
         .pipe(sass()).on('error', errors)
         .pipe(postcss(processors))

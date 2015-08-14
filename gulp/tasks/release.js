@@ -1,11 +1,9 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp'),
     git = require('gulp-git'),
     bump = require('gulp-bump'),
     filter = require('gulp-filter'),
-    util = require('gulp-util'),
     tag = require('gulp-tag-version');
 
 function release(type) {

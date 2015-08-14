@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require("gulp"),
@@ -9,7 +8,7 @@ var gulp = require("gulp"),
     config = require('../config').icons;
 
 gulp.task('icons', function(){
-  gulp.src(config.src)
+  return gulp.src(config.src)
     .pipe(sketch({
       export: 'artboards',
       formats: 'svg'
@@ -24,7 +23,7 @@ gulp.task('icons', function(){
         fontPath: config.dest.fontcss + '/',
         className: config.name
       };
-      gulp.src(config.template.src + config.template.name + '.scss')
+      return gulp.src(config.template.src + config.template.name + '.scss')
         .pipe(consolidate('lodash', options))
         .pipe(rename({ basename: config.name }))
         .pipe(gulp.dest(config.dest.tag));

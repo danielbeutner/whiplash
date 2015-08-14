@@ -1,14 +1,12 @@
-/*jslint node: true */
-'use strict';
+ 'use strict';
 
 var gulp = require('gulp'),
     sync = require('browser-sync'),
-    shell = require('gulp-shell'),
     config = require('../config');
 
 gulp.task('watch',['assets', 'css', 'js', 'html'], function() {
   /* Start Vorlon server */
-  var vorlon = config.debug ? require('vorlon') : undefined;
+  require('vorlon');
   /* Start Browsersync */
   sync.init({
     server: config.watch.src,

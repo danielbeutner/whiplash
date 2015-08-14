@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp'),
@@ -7,7 +6,7 @@ var gulp = require('gulp'),
 
 gulp.task('css_tag', function() {
   // tags
-  gulp.src(config.src)
+  return gulp.src(config.src)
     .pipe(concat('_tags.scss'))
     .pipe(gulp.dest('src/css'));
 });

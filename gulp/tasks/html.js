@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp'),
@@ -9,7 +8,7 @@ var gulp = require('gulp'),
     config = require('../config').html;
 
 gulp.task('html', function() {
-  gulp.src(config.src)
+  return gulp.src(config.src)
     .pipe(mustache({
       debug: debug
     }))

@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var src = "./src",
@@ -45,5 +44,9 @@ module.exports = {
       fontcss: "assets/fonts",
       tag: src + "/tags/elements"
     }
+  },
+  jshint: {
+    src: [src + 'js/*.js', src + 'tags/**/*.tag'],
+    configSrc: ['gulp/**/*.js', 'gulpfile.js']
   }
 };

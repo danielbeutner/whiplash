@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var gulp = require('gulp'),
@@ -18,9 +17,9 @@ gulp.task('js', function() {
     entries: [tags, config.src],
     transform: [riotify]
   })
-  .bundle()
-  .on('error', errors)
-  .pipe(source('app.js'))
-  .pipe(gulp.dest(config.dest))
-  .pipe(sync.stream());
+    .bundle()
+    .on('error', errors)
+    .pipe(source('app.js'))
+    .pipe(gulp.dest(config.dest))
+    .pipe(sync.stream());
 });
