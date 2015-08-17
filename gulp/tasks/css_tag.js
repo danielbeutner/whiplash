@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     config = require('../config').css.tag;
 
 gulp.task('css_tag', function() {
-  // tags
   return gulp.src(config.src)
     .pipe(concat('_tags.scss'))
     .pipe(gulp.dest('src/css'));
